@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-
+// add public directory
+app.use(express.static('public'));
 
 app.get('/user/:username', (req,res)=>{
 	// get parameter data from addressraw
